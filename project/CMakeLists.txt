@@ -11,15 +11,14 @@ endif()
 #####################################
 # Define Targets
 #####################################
-add_subdirectory(hellolib)
-add_subdirectory(helloapp)
+add_subdirectory(ckserver)
+add_subdirectory(ckdatamodel)
 
 #####################################
 # Define Install Targets
 #####################################
 install(TARGETS
-  hellolib
-  helloapp
+  ckserver
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib
@@ -28,11 +27,11 @@ install(TARGETS
 
 install(
   FILES 
-    ${CMAKE_SOURCE_DIR}/project/hellolib/include/hellolib.h 
-    ${CMAKE_BINARY_DIR}/exports/hellolib_export.h
+    ${CMAKE_SOURCE_DIR}/project/ckdatamodel/include/ckWidget.h 
+    ${CMAKE_BINARY_DIR}/exports/ckWidget_exports.h
   DESTINATION 
-    include/hellolib)
+    include/ckdatamodel)
 
 install(FILES  
   ${CMAKE_SOURCE_DIR}/LICENSE
-DESTINATION .)
+  DESTINATION .)

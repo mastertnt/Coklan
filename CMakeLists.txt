@@ -43,7 +43,7 @@ set(CMAKE_PREFIX_PATH ${CMAKE_BINARY_DIR} ${CMAKE_PREFIX_PATH})
 #####################################
 option(BUILD_TESTING "Build tests" FALSE)
 option(BUILD_SHARED_LIBS "Build shared libraries" FALSE)
-option(BUILD_WITH_MT "Build libraries as MultiThreaded DLL (Windows Only)" FALSE)
+option(BUILD_WITH_MT "Build libraries as MultiThreaded DLL (Windows Only)" TRUE)
 
 #####################################
 # Define CMake Module Imports
